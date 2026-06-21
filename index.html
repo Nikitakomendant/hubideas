@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Молодіжний центр "Hub Ideas"</title>
+    <meta name="description" content="Офіційна сторінка молодіжного центру Hub Ideas. Календар подій, соціальні мережі та контакти.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <div class="bento-container">
+        <div class="bento-grid">
+            
+            <!-- 1. Profile Card (Main Focus) -->
+            <div class="bento-card profile-card" style="grid-area: profile;">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <img src="https://cdn-b.heylink.me/media/users/avatars/002f36ddcc9e4e508514a570703aa051.webp" alt="Hub Ideas Logo" class="avatar" fetchpriority="high" loading="eager" onerror="this.src='https://ui-avatars.com/api/?name=Hub+Ideas&background=0D8ABC&color=fff&size=150'">
+                </div>
+                <h1>Молодіжний центр<br><span class="brand-text">"Hub Ideas"</span></h1>
+                <p class="bio">Створюємо можливості для молоді разом! Розвиток, творчість та підтримка. ✨</p>
+                
+                <div class="location-btn" onclick="toggleMap()">
+                    <div class="loc-left">
+                        <i class="ph-fill ph-map-pin"></i>
+                        <span>м. Зміїв, м-н Соборний, 6</span>
+                    </div>
+                    <i class="ph ph-caret-down map-caret" id="map-caret"></i>
+                </div>
+                
+                <div class="map-container" id="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.565860713295!2d36.35338141570773!3d49.68239087937517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279a0717208dcd%3A0xc665e77b6a9ed4b9!2sMaidan%20Sobornyi%2C%206%2C%20Zmiiv%2C%20Kharkivs&#39;ka%20oblast%2C%20Ukraine%2C%2063404!5e0!3m2!1sen!2sus!4v1718919600000!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- 2. Calendar Card -->
+            <a href="https://calendar.google.com/calendar/u/0/embed?src=3710220a9e182e921351243cd6f8d6d0d4df574020962c9b06eea50407c4f9f3%40group.calendar.google.com" target="_blank" class="bento-card hover-card calendar-card" style="grid-area: calendar;">
+                <div class="card-icon-wrap">
+                    <i class="ph-duotone ph-calendar-blank"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Календар подій</h3>
+                    <p>Плануй з Хабідей</p>
+                </div>
+                <div class="arrow-indicator"><i class="ph ph-arrow-up-right"></i></div>
+            </a>
+
+            <!-- 3. Values Card -->
+            <a href="https://docs.google.com/document/d/1gG9662L8-UGDaW7H1qQLiNqWO9YheACE/edit" target="_blank" class="bento-card hover-card values-card" style="grid-area: values;">
+                <div class="card-icon-wrap">
+                    <i class="ph-duotone ph-sparkle"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Наші цінності 🤩</h3>
+                    <p>Що для нас важливо</p>
+                </div>
+                <div class="arrow-indicator"><i class="ph ph-arrow-up-right"></i></div>
+            </a>
+
+            <!-- 4. Youth Day Card (Large Banner) -->
+            <a href="https://drive.google.com/file/d/17ByWVtktFQ25cpq0W_5-jqqDrHQSSNGt/view" target="_blank" class="bento-card hover-card youth-card" style="grid-area: youth;">
+                <img src="youth_day.png" alt="День молоді" class="bg-image" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop'">
+                <div class="gradient-overlay"></div>
+                <div class="youth-content">
+                    <div class="badge">Спогади</div>
+                    <h2>День молоді 2025</h2>
+                    <p>Дивись фотографії, як це було круто!</p>
+                </div>
+                <div class="play-btn"><i class="ph-fill ph-play"></i></div>
+            </a>
+
+            <!-- 5. Padlet Card -->
+            <a href="https://padlet.com/hubideaszmiiv/padlet-qsbw2260e35e6owc" target="_blank" class="bento-card hover-card padlet-card" style="grid-area: padlet;">
+                <div class="card-icon-wrap">
+                    <i class="ph-duotone ph-envelope-open"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Дошка зізнань 🫶</h3>
+                    <p>Анонімно та відкрито</p>
+                </div>
+                <div class="arrow-indicator"><i class="ph ph-arrow-up-right"></i></div>
+            </a>
+
+            <!-- 6. Social Media Container -->
+            <div class="bento-card social-container" style="grid-area: social;">
+                <p class="social-title">Слідкуй за нами</p>
+                <div class="social-grid">
+                    <a href="https://instagram.com/hubideas_zm" target="_blank" class="social-btn instagram" aria-label="Instagram">
+                        <i class="ph-fill ph-instagram-logo"></i>
+                    </a>
+                    <a href="https://t.me/hubideas_zm" target="_blank" class="social-btn telegram" aria-label="Telegram">
+                        <i class="ph-fill ph-telegram-logo"></i>
+                    </a>
+                    <a href="https://facebook.com/hubideas_zm" target="_blank" class="social-btn facebook" aria-label="Facebook">
+                        <i class="ph-fill ph-facebook-logo"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleMap() {
+            const container = document.getElementById('map-container');
+            const caret = document.getElementById('map-caret');
+            container.classList.toggle('active');
+            caret.style.transform = container.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        }
+    </script>
+</body>
+</html>
